@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1087311032701",
+    "project_id": "money-logger-6d4b2",
+    "storage_bucket": "money-logger-6d4b2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087311032701:android:d0ccd32114a4b89d1d9c14",
+        "android_client_info": {
+          "package_name": "com.example.money_logger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcL4NAziAnQIHmTdK3LxM2KCmUqZ0Ju6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

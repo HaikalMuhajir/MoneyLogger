@@ -2,8 +2,7 @@
 
 **Aplikasi Pencatat Pengeluaran Pribadi yang Sederhana dan Efisien.**
 
-[![Build Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]
-[![Flutter Version](https://raw.githubusercontent.com/dnfield/flutter_svg/7d374d7107561cbd906d7c0ca26fef02cc01e7c8/example/assets/flutter_logo.svg?sanitize=true)](https://flutter.dev/)
+![Build Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)
 
 ## 📝 Deskripsi Proyek
 

@@ -2,8 +2,8 @@
 
 **Aplikasi Pencatat Pengeluaran Pribadi yang Sederhana dan Efisien.**
 
-[![Build Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)](link-ke-status-build)
-[![Flutter Version](https://img.shields.io/badge/Flutter-v[3.35.6]-#02569B.svg)](https://flutter.dev/)
+[![Build Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]
+[![Flutter Version](https://raw.githubusercontent.com/dnfield/flutter_svg/7d374d7107561cbd906d7c0ca26fef02cc01e7c8/example/assets/flutter_logo.svg?sanitize=true)](https://flutter.dev/)
 
 ## 📝 Deskripsi Proyek
 
@@ -75,4 +75,4 @@ Kami sangat menyambut baik kontribusi dalam bentuk apapun! Jika Anda memiliki sa
 Jika Anda memiliki pertanyaan atau ingin diskusi lebih lanjut tentang proyek ini:
 
 * **Github** - [@HaikalMuhajir](https://github.com/HaikalMuhajir)
-* **Email** - [haikal.muhajir10@gmail.com]
+* **Email** - haikal.muhajir10@gmail.com

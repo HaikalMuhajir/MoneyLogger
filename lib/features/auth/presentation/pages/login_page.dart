@@ -2,10 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-// Import RegistrationPage
-import 'registration_page.dart';
 // Sesuaikan import path jika berbeda
 import '../../presentation/riverpod/auth_provider.dart';
+// Import navigation service
+import '../../../../config/routes/navigation_service.dart';
+import '../../../../config/routes/app_routes.dart';
 
 class LoginPage extends ConsumerStatefulWidget {
   const LoginPage({super.key});
@@ -35,14 +36,20 @@ class _LoginPageState extends ConsumerState<LoginPage> {
   Widget build(BuildContext context) {
     final authState = ref.watch(authNotifierProvider);
 
-    // Side Effect: Menampilkan pesan error
+    // Side Effect: Menampilkan pesan error dan handle navigation
     ref.listen<AuthState>(authNotifierProvider, (previous, next) {
       if (next.errorMessage != null) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text(next.errorMessage!)),
         );
       }
-      // Navigasi ke Home ditangani oleh AppRoot di main.dart, BUKAN di sini
+
+      // Jika login berhasil (ada user dan tidak loading),
+      // AppRoot akan otomatis menangani navigasi ke HomePage
+      if (next.user != null && !next.isLoading) {
+        // Tidak perlu navigasi manual, AppRoot akan menangani ini
+        debugPrint('Login berhasil, AppRoot akan menangani navigasi');
+      }
     });
 
     return Scaffold(
@@ -81,10 +88,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                 // Tombol Navigasi ke Halaman Daftar
                 TextButton(
                   onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                          builder: (_) => const RegistrationPage()),
-                    );
+                    NavigationService.pushNamed(AppRoutes.register);
                   },
                   child: const Text('Belum punya akun? Daftar di sini'),
                 ),
